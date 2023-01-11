@@ -3,7 +3,6 @@ import Interview_Fev2023 from "./articles/interview-fevrier-2023.pdf";
 import Litterature_Fev2023 from "./articles/litterature-fevrier-2023.pdf";
 import Philo_Fev2023 from "./articles/philo-fevrier-2023.pdf";
 
-
 export const articleMapper = [{
     title: "L'astrologie: un outil de découverte de soi.",
     id: "astrologie_outil_decouverte_de_soi_0223",
