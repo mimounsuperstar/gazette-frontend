@@ -1,7 +1,7 @@
-import Astrologie_Fev2023 from "../articles/astrologie-fevrier-2023.pdf";
-import Interview_Fev2023 from "../articles/interview-fevrier-2023.pdf";
-import Litterature_Fev2023 from "../articles/litterature-fevrier-2023.pdf";
-import Philo_Fev2023 from "../articles/philo-fevrier-2023.pdf";
+import Astrologie_Fev2023 from "./articles/astrologie-fevrier-2023.pdf";
+import Interview_Fev2023 from "./articles/interview-fevrier-2023.pdf";
+import Litterature_Fev2023 from "./articles/litterature-fevrier-2023.pdf";
+import Philo_Fev2023 from "./articles/philo-fevrier-2023.pdf";
 
 
 export const articleMapper = [{

@@ -1,4 +1,4 @@
-import Error from "../articles/error.pdf"
+import Error from "./articles/error.pdf"
 import {articleMapper} from "./listPublications";
 
 export function findPDF(query){

@@ -1,15 +1,14 @@
 import {useParams} from "react-router-dom";
 import React, {useEffect, useState} from "react";
-import { Document, Page} from 'react-pdf/'
+import { Document, Page} from 'react-pdf/dist/esm/entry.webpack5'
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
-import Sample from "../articles/sample.pdf"
+import Sample from "../helpers/articles/sample.pdf"
 import {findPDF} from "../helpers/findPDF";
-import {pdfjs} from "react-pdf";
+
 
 function Article() {
 
-    pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.js';
     const {id} = useParams()
     const [pages, setPages] = useState([]);
     const [numPages, setNumPages] = useState(null);
