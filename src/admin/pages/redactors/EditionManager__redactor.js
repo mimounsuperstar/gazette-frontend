@@ -39,7 +39,6 @@ function EditionManager__chief() {
     useEffect(() => {
         listTasks(id).then(resp => {
             setArticles(resp)
-            console.log(resp)
         })
     }, []);
 
