@@ -34,14 +34,14 @@ function CupideonClasse(){
     axios.get("https://www.googleapis.com/oauth2/v3/userinfo?access_token="+sessionStorage.getItem("token")).then(response => {
         axios.get(apiURL + "cupideon/user/check/" + response.data.email).then(rep => {
             if (rep.data.registered == true) {
-                window.location.replace('http://localhost:3000/cupideon/done')
+                window.location.replace('https://lagazettedeleon.social/cupideon/done')
             }
         })
     })
 
     const form = JSON.parse(sessionStorage.getItem("answers"))
     if(form == null || form.gender == ""){
-        window.location.replace('http://localhost:3000/cupideon/gender')
+        window.location.replace('https://lagazettedeleon.social/cupideon/gender')
     }
 
     const next = () => {
@@ -53,7 +53,7 @@ function CupideonClasse(){
             storage = JSON.parse(storage)
             storage.classe = answer
             sessionStorage.setItem("answers", JSON.stringify(storage))
-            window.location.replace('http://localhost:3000/cupideon/question/1');
+            window.location.replace('https://lagazettedeleon.social/cupideon/question/1');
         }
     }
     return(

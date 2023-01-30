@@ -9,7 +9,7 @@ function CupideonQuestions__redirect(){
     axios.get("https://www.googleapis.com/oauth2/v3/userinfo?access_token="+sessionStorage.getItem("token")).then(response => {
         axios.get(apiURL + "cupideon/user/check/" + response.data.email).then(rep => {
             if (rep.data.registered == true) {
-                window.location.replace('http://localhost:3000/cupideon/done')
+                window.location.replace('https://lagazettedeleon.social/cupideon/done')
             }
         })
     })

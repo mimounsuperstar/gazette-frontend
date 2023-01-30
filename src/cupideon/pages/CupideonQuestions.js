@@ -26,9 +26,9 @@ function CupideonQuestions(props){
     const form = JSON.parse(sessionStorage.getItem("answers"))
     if(form == null || form.answers[questionId-1] == ""){
         if(questionId-1<=0){
-            window.location.replace('http://localhost:3000/cupideon/classe/')
+            window.location.replace('https://lagazettedeleon.social/cupideon/classe/')
         } else {
-            window.location.replace('http://localhost:3000/cupideon/question/'+(questionId-1).toString())
+            window.location.replace('https://lagazettedeleon.social/cupideon/question/'+(questionId-1).toString())
         }
     }
     const next = () => {
@@ -41,7 +41,7 @@ function CupideonQuestions(props){
             storage.answers[questionId] = answer
             sessionStorage.setItem("answers", JSON.stringify(storage))
             if(questionId != 22){
-                window.location.replace('http://localhost:3000/cupideon/question/'+(questionId+2).toString());
+                window.location.replace('https://lagazettedeleon.social/cupideon/question/'+(questionId+2).toString());
             } else {
                 let storage = sessionStorage.getItem("answers")
                 storage = JSON.parse(storage)
@@ -76,11 +76,11 @@ function CupideonQuestions(props){
                 }
                 if(storage.gender == "H"){
                     axios.post(apiURL + "cupideon/boys/add/", data).then(()=>{
-                        //window.location.replace('http://localhost:3000/cupideon/done');
+                        //window.location.replace('https://lagazettedeleon.social/cupideon/done');
                     })
                 } else if(storage.gender == "F"){
                     axios.post(apiURL + "cupideon/girls/add/", data).then(()=>{
-                        //window.location.replace('http://localhost:3000/cupideon/done');
+                        //window.location.replace('https://lagazettedeleon.social/cupideon/done');
                     })
                 }
             }

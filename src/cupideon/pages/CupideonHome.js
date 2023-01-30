@@ -30,9 +30,9 @@ function CupideonHome(){
                     "answers": ["","","","","","","","","","","","","","","","","","","","","","",""]
                 }
             `)
-                      window.location.replace('http://localhost:3000/cupideon/gender')
+                      window.location.replace('https://lagazettedeleon.social/cupideon/gender')
                   } else {
-                      window.location.replace('http://localhost:3000/cupideon/done')
+                      window.location.replace('https://lagazettedeleon.social/cupideon/done')
                   }
               })
             })
