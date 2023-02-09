@@ -30,7 +30,7 @@ export const CupideonFormTitleCrownFlower = styled.img`
 `
 
 export const CupideonFormTitle = styled.h1`
-  font-family: Wankstaberg Battles;
+  font-family: 'Just Another Hand', cursive;
   font-size: 3.5em;
   color: #2C1B14;
   text-align: center;
