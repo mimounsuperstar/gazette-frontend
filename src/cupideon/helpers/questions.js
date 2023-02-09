@@ -36,7 +36,7 @@ export const questionsData = [
         questions: [["A", "OUI"],["B" , "NON"]]
     },
     {
-        name:"L’acte de brûler le drapeau de votre pays devrait-il être illégal? ",
+        name:"L’acte de brûler le drapeau de ton pays devrait-il être illégal? ",
         questions: [["A", "OUI"],["B" , "NON"]]
     },
     {
@@ -88,7 +88,7 @@ export const questionsData = [
         questions: [["A", "OUI"],["B" , "NON"]]
     },
     {
-        name:"Tu préféres l’amour ou l’argent?",
+        name:"Tu préfères l’amour ou l’argent?",
         questions: [["A", "L'amour"],["B" , "L'argent"]]
     },
     {

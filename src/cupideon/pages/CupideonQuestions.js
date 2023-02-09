@@ -78,11 +78,11 @@ function CupideonQuestions(props){
                 }
                 if(storage.gender == "H"){
                     axios.post(apiURL + "cupideon/boys/add/", data).then(()=>{
-                        //window.location.replace('https://lagazettedeleon.social/cupideon/done');
+                        window.location.replace('https://lagazettedeleon.social/cupideon/done');
                     })
                 } else if(storage.gender == "F"){
                     axios.post(apiURL + "cupideon/girls/add/", data).then(()=>{
-                        //window.location.replace('https://lagazettedeleon.social/cupideon/done');
+                        window.location.replace('https://lagazettedeleon.social/cupideon/done');
                     })
                 }
             }
