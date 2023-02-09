@@ -40,7 +40,7 @@ function CupideonQuestions(props){
             storage = JSON.parse(storage)
             storage.answers[questionId] = answer
             sessionStorage.setItem("answers", JSON.stringify(storage))
-            if(questionId != 22){
+            if(questionId != 24){
                 window.location.replace('https://lagazettedeleon.social/cupideon/question/'+(questionId+2).toString());
             } else {
                 let storage = sessionStorage.getItem("answers")
@@ -72,7 +72,9 @@ function CupideonQuestions(props){
                     q20: storage.answers[19],
                     q21: storage.answers[20],
                     q22: storage.answers[21],
-                    q23: storage.answers[22]
+                    q23: storage.answers[22],
+                    q24: storage.answers[23],
+                    q25: storage.answers[24]
                 }
                 if(storage.gender == "H"){
                     axios.post(apiURL + "cupideon/boys/add/", data).then(()=>{

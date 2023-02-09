@@ -17,10 +17,16 @@ export const CupideonFormWrapper = styled.div`
 
 export const CupideonFormTitleCrown = styled.div`
   height: 15vh;
+  @media (max-width: 835px) {
+    height: 10vh;
+  }
 `
 
 export const CupideonFormTitleCrownFlower = styled.img`
   height: 15vh;
+  @media (max-width: 835px) {
+    height: 10vh;
+  }
 `
 
 export const CupideonFormTitle = styled.h1`

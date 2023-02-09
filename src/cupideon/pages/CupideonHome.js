@@ -27,7 +27,7 @@ function CupideonHome(){
                     "first_name": "${response.data.given_name}",
                     "last_name": "${response.data.family_name}",
                     "mail": "${response.data.email}",
-                    "answers": ["","","","","","","","","","","","","","","","","","","","","","",""]
+                    "answers": ["","","","","","","","","","","","","","","","","","","","","","","","",""]
                 }
             `)
                       window.location.replace('https://lagazettedeleon.social/cupideon/gender')

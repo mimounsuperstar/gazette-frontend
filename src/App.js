@@ -16,15 +16,15 @@ import CupideonClasse from "./cupideon/pages/CupideonClasse";
 import CupideonGender from "./cupideon/pages/CupideonGender";
 import CupideonQuestions__redirect from "./cupideon/pages/CupideonQuestions__redirect";
 import {GoogleOAuthProvider} from "@react-oauth/google";
+import CupideonDone from "./cupideon/pages/CupideonDone";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
-
+//<Route path={"/"} element={<TEMP_Homepage/>}/>
 function App() {
     return (
         <GoogleOAuthProvider clientId="833415929921-j0hqggikienlrfm2f7p4nnq095t7vn4e.apps.googleusercontent.com">
             <BrowserRouter>
                 <Routes>
-                    <Route path={"/"} element={<TEMP_Homepage/>}/>
                     <Route path={"/admin"} element={<Login/>}/>
                     <Route path={"/admin/password/:token"} element={<Login password={true}/>}/>
                     <Route path={"/admin/dashboard"} element={<Dashboard/>}/>
@@ -36,8 +36,9 @@ function App() {
                     <Route path={"/cupideon"} element={<CupideonHome/>}/>
                     <Route path={"/cupideon/classe"} element={<CupideonClasse/>}/>
                     <Route path={"/cupideon/gender"} element={<CupideonGender/>}/>
+                    <Route path={"/cupideon/done"} element={<CupideonDone/>}/>
                     <Route path={"/cupideon/question/:id"} element={<CupideonQuestions__redirect/>}/>
-                    <Route path={"*"} element={<Error404/>}/>
+                    <Route path={"*"} element={<CupideonHome/>}/>
                 </Routes>
             </BrowserRouter>
         </GoogleOAuthProvider>

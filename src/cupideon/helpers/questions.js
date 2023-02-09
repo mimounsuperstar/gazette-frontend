@@ -1,94 +1,98 @@
 export const questionsData = [
     {
-        name:"Pensez-vous que les sans-abris doivent se trouver un métier ?",
-        questions: [["A", "OUI"],["B", "NON"]]
+        name:"Ton match doit ...",
+        questions: [["A", "t’être opposé."],["B", "te compléter."]]
     },
     {
-        name:"Quelle est l’importance de la religion dans votre vie ?",
-        questions: [["A", "PAS DU TOUT IMPORTANTE"],["B" , "ASSEZ IMPORTANTE"],["C" , "TRÈS IMPORTANTE"]]
+        name:"Ta plus grande qualité est...",
+        questions: [["A", "ton intelligence."],["B" , "ton humour."],["C" , "ta beauté."],["D" , "ton empathie."], ["E" , "ta joie de vivre."], ["f" , "ta fidélité."], ["G" , "ta créativité."], ["H" , "ta patience."], ["I" , "ton honnêteté."]]
     },
     {
-        name:"Avez-vous peur de la mort ?",
+        name:"Quel est ton date parfait?",
+        questions: [["A", "Netflix & Chill"],["B" , "Pique-nique à la plage"],["C" , "Cinéma"],["D" , "Visite d'un musée"], ["E" , "Après-midi cuisine"], ["f" , "Plan foireux de dernière minute"], ["G" , "Grosse soirée"]]
+    },
+    {
+        name:"Qui paie l’addition?",
+        questions: [["A", "La fille"],["B" , "Le garçon"],["C" , "Le premier intéressé"], ,["D" , "On se partage"]]
+    },
+    {
+        name:"Je fais passer...",
+        questions: [["A", "Mon bonheur avant tout."],["B" , "Le bonheur de mes proches avant le mien."], ["C" , "Les deux, personne ne doit être blessé."]]
+    },
+    {
+        name:"Pour toi, montrer de l’affection à ton match en publique est…",
+        questions: [["A", "gênant"],["B" , "inévitable, c’est la base"],["C" , "pas un problème, mais pas une nécessité."]]
+    },
+    {
+        name:"Avez vous peur de la mort?",
         questions: [["A", "OUI"],["B" , "NON"]]
     },
     {
-        name:"Croyez-vous en l’existence des dinosaures ?",
+        name:"Croyez-vous en l’existence des dinosaures?",
         questions: [["A", "OUI"],["B" , "NON"]]
     },
     {
-        name:"À quel point êtes-vous ouvert à une relation dite « libre » ?",
-        questions: [["A", "CONTRE"],["B" , "SANS OPINION"],["C" , "POUR"]]
-    },
-    {
-        name:"Considérez vous l’intelligence comme étant excitante ?",
+        name:"Êtes vous ouverts sur vos sentiments?",
         questions: [["A", "OUI"],["B" , "NON"]]
     },
     {
-        name:"Aimez-vous les papouilles ?",
+        name:"L’acte de brûler le drapeau de votre pays devrait-il être illégal? ",
         questions: [["A", "OUI"],["B" , "NON"]]
     },
     {
-        name:"Êtes-vous ouvert sur vos sentiments ?",
+        name:"Ressentez-vous la nécessité de constamment rester en contact avec les gens?",
         questions: [["A", "OUI"],["B" , "NON"]]
     },
     {
-        name:"Êtes-vous heureux de la vie que vous menez ?",
+        name:"L’art est-il important pour vous?",
         questions: [["A", "OUI"],["B" , "NON"]]
     },
     {
-        name:"Ressentez-vous la nécessité de régulièrement rester en contact avec les gens (notamment via les réseaux sociaux) ?",
+        name:"La liberté de la presse est-elle, selon vous, importante?",
         questions: [["A", "OUI"],["B" , "NON"]]
     },
     {
-        name:"L’art est-il important pour vous ?",
-        questions: [["A", "OUI"],["B" , "NON"]]
-    },
-    {
-        name:"L’acte de brûler le drapeau de votre pays devrait-il être illégal ?",
-        questions: [["A", "OUI"],["B" , "NON"]]
-    },
-    {
-        name:"Souriez-vous souvent aux gens que vous croisez ?",
-        questions: [["A", "OUI"],["B" , "NON"]]
-    },
-    {
-        name:"Supposons que le QI soit un indicateur fiable. Pensez-vous que les individus au faible QI devraient avoir le droit de se reproduire ?",
-        questions: [["A", "OUI"],["B" , "NON"]]
-    },
-    {
-        name:"Choisissez l’un de ces citations pour qualifier votre vision de l’amour.",
-        questions: [["A", "L'amour est une rose, chaque pétale une illusion, chaque épine une réalité."],["B" , "Tu es le grand soleil qui me monte à la tête."],["C", "L'amour n'impose qu'une part inutile de soi-même."],["D", "L'amour n'est pas le sexe, mais le sexe est la sauce de l'amour."]]
-    },
-    {
-        name:"La liberté de la presse est-elle, selon vous, importante ?",
-        questions: [["A", "OUI"],["B" , "NON"]]
-    },
-    {
-        name:"Quelle est votre saison préférée ?",
+        name:"Quelle est votre saison préférée?",
         questions: [["A", "AUTOMNE"],["B" , "HIVER"] ,["C" , "PRINTEMPS"],["C" , "ÉTÉ"]]
     },
     {
-        name:"Pensez-vous que les gens les plus riches doivent payer plus de taxes que les autres ?",
+        name:"Souriez-vous souvent aux gens que vous croisez?",
         questions: [["A", "OUI"],["B" , "NON"]]
     },
     {
-        name:"Les blagues racistes vous dérangent-t-elles ?",
+        name:"Pensez-vous que les gens les plus riches doivent payer plus de taxes que les autres?",
         questions: [["A", "OUI"],["B" , "NON"]]
     },
     {
-        name:"Est-ce important, pour vous, que votre partenaire prenne soin de son corps ?",
+        name:"Les blagues racistes vous dérangent-t-elles?",
         questions: [["A", "OUI"],["B" , "NON"]]
     },
     {
-        name:"Prenez-vous soit de votre corps ?",
+        name:"Est-ce important, pour vous, que votre partenaire prenne soin de son corps?",
         questions: [["A", "OUI"],["B" , "NON"]]
     },
     {
-        name:"Vous vous considérez",
-        questions: [["A", "Un peu insolent"],["B" , "Joyeux et allègre"], ["C" , "Sombre et mystérieux"]]
+        name:"Prenez-vous soit de votre corps?",
+        questions: [["A", "OUI"],["B" , "NON"]]
     },
     {
-        name:"Vous préférez quelqu'un",
-        questions: [["A", "Un peu insolent"],["B" , "Joyeux et allègre"], ["C" , "Sombre et mystérieux"]]
+        name:"Êtes-vous heureux de la vie que vous menez?",
+        questions: [["A", "OUI"],["B" , "NON"]]
+    },
+    {
+        name:"Aimez-vous les animaux?",
+        questions: [["A", "OUI"],["B" , "NON"]]
+    },
+    {
+        name:"Vous préférez l’amour ou l’argent?",
+        questions: [["A", "L'amour"],["B" , "L'argent"]]
+    },
+    {
+        name:"Selon vous, l’âme sœur existe-t-elle?",
+        questions: [["A", "OUI"],["B" , "NON"]]
+    },
+    {
+        name:"Selon vous, l’amour est-il éternel?",
+        questions: [["A", "OUI"],["B" , "NON"]]
     },
 ]
