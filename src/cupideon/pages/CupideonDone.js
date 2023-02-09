@@ -30,14 +30,6 @@ import {apiURL} from "../../admin/api/api";
 
 
 function CupideonDone(){
-
-    const form = JSON.parse(sessionStorage.getItem("answers"))
-    if(form == null || form.mail == ""){
-
-    } else {
-        window.location.replace('https://lagazettedeleon.social/cupideon/')
-    }
-
     axios.get("https://www.googleapis.com/oauth2/v3/userinfo?access_token="+sessionStorage.getItem("token")).then(response => {
         axios.get(apiURL + "cupideon/user/check/" + response.data.email).then(rep => {
             if (rep.data.registered == false) {
