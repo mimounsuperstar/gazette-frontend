@@ -72,7 +72,7 @@ export const questionsData = [
         questions: [["A", "OUI"],["B" , "NON"]]
     },
     {
-        name:"Prends-tu soin de votre corps?",
+        name:"Prends-tu soin de ton corps?",
         questions: [["A", "OUI"],["B" , "NON"]]
     },
     {
