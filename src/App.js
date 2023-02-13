@@ -33,12 +33,8 @@ function App() {
                     <Route path={"/admin/editor/:id"} element={<Editor/>}/>
                     <Route path={"/admin/editor/:id/:token"} element={<Editor__redirect/>}/>
                     <Route path={"/article/:id/"} element={<Article/>}/>
-                    <Route path={"/cupideon"} element={<CupideonHome/>}/>
-                    <Route path={"/cupideon/classe"} element={<CupideonClasse/>}/>
-                    <Route path={"/cupideon/gender"} element={<CupideonGender/>}/>
-                    <Route path={"/cupideon/done"} element={<CupideonDone/>}/>
-                    <Route path={"/cupideon/question/:id"} element={<CupideonQuestions__redirect/>}/>
-                    <Route path={"*"} element={<CupideonHome/>}/>
+                    <Route path={"/cupideon"} element={<CupideonDone/>}/>
+                    <Route path={"*"} element={<CupideonDone/>}/>
                 </Routes>
             </BrowserRouter>
         </GoogleOAuthProvider>
