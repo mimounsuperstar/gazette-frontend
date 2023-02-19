@@ -4,6 +4,7 @@ import { Document, Page} from 'react-pdf/dist/esm/entry.webpack5'
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.js';
 import {findPDF} from "../helpers/findPDF";
+import {ArticleLoading, ArticleLoadingText, ArticleWrapper} from "../styled/Article.styled";
 
 
 function Article() {
@@ -13,6 +14,7 @@ function Article() {
     const [numPages, setNumPages] = useState(null);
     const [userWidth, setUserWidth] = useState(window.innerWidth);
     const fileRep = findPDF(id)
+
 
     window.addEventListener("resize", (event) => {setUserWidth(window.innerWidth)});
 
@@ -27,7 +29,10 @@ function Article() {
     }
     
     return(
-        <div>
+        <ArticleWrapper>
+            <ArticleLoading loading={true}>
+                <ArticleLoadingText>Chargement en cours ...</ArticleLoadingText>
+            </ArticleLoading>
             <Document file={fileRep} onLoadSuccess={onDocumentLoadSuccess}>
                 {pages.map(page =>{
                     return(
@@ -35,7 +40,7 @@ function Article() {
                     )
                 })}
             </Document>
-        </div>
+        </ArticleWrapper>
     )
 }
 
