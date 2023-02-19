@@ -22,7 +22,7 @@ import SportThumbnail_Mars2023 from "../helpers/thumbnails/sport_chan_0323.jpg";
 import ItvThumbnail_Mars2023 from "../helpers/thumbnails/itv_vauthier_0323.JPG";
 
 function redirect(id){
-    window.location.replace('https://lagazettedeleon.social/article/'+id);
+    window.location.href = 'https://lagazettedeleon.social/article/'+id;
 }
 
 function Homepage() {

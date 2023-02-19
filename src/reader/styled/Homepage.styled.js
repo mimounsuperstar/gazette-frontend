@@ -58,6 +58,27 @@ export const HomeGrid = styled.div`
                       calc(20vw - 16px - 2px + 32px)
                       calc(20vw - 16px - 2px + 32px)
                       calc(20vw - 16px - 2px + 32px);
+  @media (max-width: 450px) {
+    padding: 10px 20px;
+    grid-template-columns: calc(50vw - 20px - 5px) calc(50vw - 20px - 5px);
+    grid-template-rows:   calc(20vw - 12px - 2px + 32px) 
+                      calc(20vw - 12px - 2px + 32px) 
+                      calc(20vw - 12px - 2px + 32px) 
+                      calc(20vw - 12px - 2px + 32px) 
+                      calc(20vw - 12px - 2px + 32px)
+                      calc(20vw - 12px - 2px + 32px)
+                      calc(20vw - 12px - 2px + 32px)
+                      calc(20vw - 12px - 2px + 32px)
+                      calc(20vw - 12px - 2px + 32px)
+                      calc(20vw - 12px - 2px + 32px)
+                      calc(20vw - 12px - 2px + 32px)
+                      calc(20vw - 12px - 2px + 32px)
+                      calc(20vw - 12px - 2px + 32px)
+                      calc(20vw - 12px - 2px + 32px)
+                      calc(20vw - 12px - 2px + 32px)
+                      calc(20vw - 12px - 2px + 32px)
+                      calc(20vw - 12px - 2px + 32px);
+  }
 `
 
 export const HomeSection = styled.section`
