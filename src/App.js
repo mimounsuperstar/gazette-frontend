@@ -17,9 +17,9 @@ import CupideonGender from "./cupideon/pages/CupideonGender";
 import CupideonQuestions__redirect from "./cupideon/pages/CupideonQuestions__redirect";
 import {GoogleOAuthProvider} from "@react-oauth/google";
 import CupideonDone from "./cupideon/pages/CupideonDone";
+import Homepage from "./reader/pages/Homepage";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
-//<Route path={"/"} element={<TEMP_Homepage/>}/>
 function App() {
     return (
         <GoogleOAuthProvider clientId="833415929921-j0hqggikienlrfm2f7p4nnq095t7vn4e.apps.googleusercontent.com">
@@ -33,8 +33,7 @@ function App() {
                     <Route path={"/admin/editor/:id"} element={<Editor/>}/>
                     <Route path={"/admin/editor/:id/:token"} element={<Editor__redirect/>}/>
                     <Route path={"/article/:id/"} element={<Article/>}/>
-                    <Route path={"/cupideon"} element={<CupideonDone/>}/>
-                    <Route path={"*"} element={<CupideonDone/>}/>
+                    <Route path={"/"} element={<Homepage/>}/>
                 </Routes>
             </BrowserRouter>
         </GoogleOAuthProvider>
